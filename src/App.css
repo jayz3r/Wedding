@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+
+html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overscroll-behavior: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 8rem;
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #fff2d7;
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  margin: 50px 0 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #fff2d7 100%
+  );
+}
+
+header {
+  color: white;
+  font-size: 2rem;
+  padding: 20px 50px 0;
+  display: flex;
+}
+
+.mainSection {
+  font-family: Good;
+  font-weight: 900;
+  position: absolute;
+  color: #fff;
+  left: 50px;
+  bottom: 200px;
+}
+
+.mainSection h2,
+.mainSection p {
+  font-size: 2rem;
+}
+
+.timer {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.time {
+  border-bottom: 2px solid #000;
+  border-radius: 10px;
+  padding: 50px;
+  margin-top: 30px;
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  color: #000;
+}
+
+.time h3 {
+  font-size: 2rem;
+}
+
+.time span {
+  padding-top: 10px;
+  font-size: 2rem;
+}
+
+.time small {
+  font-size: 1.4rem;
+}
+
+.surveySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input {
+  background-color: transparent;
+  width: 350px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-left: 10px;
+}
+
+.radios {
+  padding: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.choice {
+  text-align: center;
+}
+
+form {
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid white;
+  padding: 50px;
+  background-color: #ffeecd;
+  border-radius: 20px;
+}
+
+button {
+  padding: 15px 50px;
+  border-radius: 15px;
+  background-color: #f98866;
+  cursor: pointer;
+  border-color: white;
+  outline: none;
+}
+
+button:hover {
+  background-color: #fff2d7;
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 50px;
+}
+.width{
+  width: 700px;
+  font-style: italic;
+  font-family: "Marck Script", cursive;
+  font-weight:400;
+  font-style: normal;
+  font-size: larger;
+
+}
+@media (max-width: 1660px) {
+  .wrapper {
+    background-image: url("/A&S.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 760px) {
+  header {
+    position: absolute;
+    text-align: center;
+    flex-wrap: wrap;
+    top: 50px;
+    padding: 0 50px 0 40px;
+  }
+ h1{
+  font-size: 5.5rem;
+  /* line-height: 6rem; */
+ }
+  body {
+    background-image: url("/Aisenem&Sanjar.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    height: 70vh;
+    background-image: none;
+  }
+
+  iframe {
+    width: 350px;
+    height: 300px;
+  }
+
+  .wrapper::after {
+    content: none;
+  }
+
+  .mainSection {
+    right: 50px;
+    bottom: 15px;
+    text-align: center;
+  }
+
+  .mainSection h2 {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .mainSection p {
+    font-size: 1.3rem;
+  }
+
+  .timer {
+    width: 100%;
+    color: white;
+    background-color: rgb(0 0 0 / 0.5)
+  }
+
+  .time {
+    border-bottom: 3px solid white;
+    border-radius: none;
+    gap: 20px;
+    color: white;
+  }
+
+  span {
+    display: none;
+  }
+
+  .surveySection {
+    width: auto;
+    color: white;
+   
+  }
+
+  .inputs input {
+    color: white;
+    border-bottom: 2px solid white;
+  }
+
+  button {
+    background-color: white;
+    color: #000;
+  }
+
+  form {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 400px;
+    /* background: none; */
+  }
+  input{
+    background: none;
+  }
+
+  footer {
+    display: flex;
+    text-align: center;
+  }
+
+  footer h2 {
+    color: white;
+  }
+  .text{
+    /* height: 400px; */
+    /* width: 500px; */
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(0 0 0 / 0.5)
+  }
+  .width{
+    padding: 0 20px;
+    width: 400px;
+  }
+}
+
+.Calendar:disabled {
+  color: #000;
+}
+.heart {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 0, 0);
+  transform: rotate(-45deg);
+  position: relative;
+  animation: heartbeat 2s infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.number-rotated {
+  transform: rotate(45deg);
+}
+
+.heart::before, 
+.heart::after {
+  z-index: -1;
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: rgb(255, 11, 11);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before {
+  top: -15px;
+  left: 0px;
+}
+
+.heart::after {
+  left: 15px;
+  top: 0px;
+}
+
+@keyframes heartbeat {
+  0% {
+      transform: scale(1) rotate(-45deg);
+  }
+
+  25% {
+      transform: scale(1.25) rotate(-45deg);
+  }
+
+}
+
+.reveal-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: transform, opacity;
+}
+
+.reveal-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-height:700px) {
+  .wrapper {
+    height: 90vh;
+    /* margin: 0 90px 0 -20px; */
+  }
+  .wrapper h1{
+    margin: 0 90px 0 -20px;
+  }
+}
