@@ -173,7 +173,7 @@ footer {
 .width{
   width: 700px;
   font-style: italic;
-  font-family: "Marck Script", cursive;
+  /* font-family: "Marck Script", cursive; */
   font-weight:400;
   font-style: normal;
   font-size: larger;
@@ -211,7 +211,7 @@ footer {
   }
 
   .wrapper {
-    height: 70vh;
+    height: 75vh;
     background-image: none;
   }
 
@@ -229,9 +229,7 @@ footer {
     bottom: 15px;
     text-align: center;
   }
-  .mainSection .rusk{
-    bottom: 25px;
-  }
+
   .mainSection h2 {
     text-align: center;
     padding-bottom: 15px;
@@ -250,7 +248,7 @@ footer {
   .time {
     border-bottom: 3px solid white;
     border-radius: none;
-    gap: 20px;
+    gap: 15px;
     color: white;
   }
 
@@ -369,12 +367,12 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-@media (max-height:700px) {
+@media (max-height:800px),(max-width:400px) {
   .wrapper {
     height: 90vh;
     /* margin: 0 90px 0 -20px; */
   }
   .wrapper h1{
-    margin: 0 90px 0 -20px;
+    margin: 0 40px 0 -20px;
   }
 }
