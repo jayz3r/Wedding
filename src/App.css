@@ -211,7 +211,7 @@ footer {
   }
 
   .wrapper {
-    height: 75vh;
+    height: 72vh;
     background-image: none;
   }
 
@@ -372,7 +372,7 @@ footer {
     height: 90vh;
     /* margin: 0 90px 0 -20px; */
   }
-  .wrapper h1{
-    margin: 0 40px 0 -20px;
-  }
+  /* .wrapper h1{ */
+    /* margin: 0 40px 0 -20px; */
+  /* } */
 }
