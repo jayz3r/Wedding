@@ -43,7 +43,7 @@ const Rus = () => {
         <header>
           <h1 className="text-[5.5rem]">Санжар & Айсенем</h1>
         </header>
-        <div className="mainSection">
+        <div className="mainSection rusk">
           <h2>Пригласительное на свадьбу</h2>
           <p>Ресторан "АТА"</p>
           <p>Дата: 29.09.2024</p>

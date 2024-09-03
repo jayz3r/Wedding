@@ -229,7 +229,9 @@ footer {
     bottom: 15px;
     text-align: center;
   }
-
+  .mainSection .rusk{
+    bottom: 25px;
+  }
   .mainSection h2 {
     text-align: center;
     padding-bottom: 15px;
@@ -252,9 +254,7 @@ footer {
     color: white;
   }
 
-  span {
-    display: none;
-  }
+
 
   .surveySection {
     width: auto;
