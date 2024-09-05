@@ -12,7 +12,7 @@ function KG() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2024-09 -29T17:00:00");
+    const weddingDate = new Date("2024-09-29T17:00:00");
     const updateTimer = () => {
       const now = new Date();
       const timeDifference = weddingDate - now;
