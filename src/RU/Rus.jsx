@@ -44,6 +44,7 @@ const Rus = () => {
         </header>
         <div className="mainSection rusk">
           <h2>Опрос</h2>
+          <span className="text-8xl  bottom-0 right-0 text-white ">&#8595;</span>
         </div>
       </div>
       <Text
