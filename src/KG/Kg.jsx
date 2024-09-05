@@ -44,6 +44,8 @@ function KG() {
         </header>
         <div className="mainSection">
           <h2 className="text-5xl">Опрос</h2>
+      <span className="text-8xl  bottom-0 right-0 text-white ">&#8595;</span>
+
         </div>
       </div>
       <Text
@@ -72,6 +74,7 @@ function KG() {
       <div className="timer ">
         <h2 className="text-3xl">Башталышы</h2>
         <h2 className="text-5xl">17:00</h2>
+        <h2 className="text-3xl mt-12">Тойго чейин:</h2>
         <div className="time">
           <div className="days">
             <h3 id="days">{timeLeft.days}</h3>

@@ -73,6 +73,7 @@ const Rus = () => {
       <div className="timer">
         <h2 className="text-3xl">Начало свадьбы:</h2>
         <h2 className="text-5xl">17:00</h2>
+        <h2 className="text-3xl mt-12">До начала свадьбы осталось</h2>
         <div className="time">
           <div className="days">
             <h3 id="days">{timeLeft.days}</h3>
