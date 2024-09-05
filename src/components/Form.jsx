@@ -44,7 +44,7 @@ function Form({name, yes, no}) {
     return (
       <div>
         <form onSubmit={handleSubmit}>
-          <h2 className="text-2xl">Опрос</h2>
+          <h2 className="text-2xl text-[#3d251e]">Опрос</h2>
           <div className="inputs">
             <input
               required
@@ -55,7 +55,7 @@ function Form({name, yes, no}) {
               onChange={handleChange}
             />
           </div>
-          <div className="radios">
+          <div className="radios text-[#3d251e]">
             <div className="choice">
               <label htmlFor="yes">
                 <p>{yes}</p>
@@ -83,7 +83,7 @@ function Form({name, yes, no}) {
               />
             </div>
           </div>
-          <button type="submit" className="bg-black p-4">Отправить</button>
+          <button type="submit" className="bg-[#3d251e] p-4">Отправить</button>
         </form>
       </div>
     );

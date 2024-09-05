@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
-
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: aquar;
+  src: url(/Aquarelle.ttf);
+}
 html,
 body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
@@ -14,16 +17,23 @@ body {
   box-sizing: border-box;
 }
 
-h1{
+h1 {
   font-size: 8rem;
-  font-family: "Marck Script", cursive;
+  font-family: aquar;
+  font-weight: 400;
+  font-style: normal;
+}
+.font {
+  font-family: aquar;
   font-weight: 400;
   font-style: normal;
 }
 body {
   background-color: #fff2d7;
-  font-family: "Nanum Gothic", sans-serif;
-  font-weight: lighter;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-style: normal;
+
   margin: 0;
   padding: 0;
 }
@@ -170,14 +180,13 @@ button:hover {
 footer {
   margin-top: 50px;
 }
-.width{
+.width {
   width: 700px;
   font-style: italic;
   /* font-family: "Marck Script", cursive; */
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
   font-size: larger;
-
 }
 @media (max-width: 1660px) {
   .wrapper {
@@ -196,10 +205,10 @@ footer {
     top: 50px;
     padding: 0 50px 0 40px;
   }
- h1{
-  font-size: 5.5rem;
-  /* line-height: 6rem; */
- }
+  h1 {
+    font-size: 5.5rem;
+    /* line-height: 6rem; */
+  }
   body {
     background-image: url("/Aisenem&Sanjar.jpg");
     background-size: cover;
@@ -233,6 +242,7 @@ footer {
   .mainSection h2 {
     text-align: center;
     padding-bottom: 15px;
+    font-size: 3rem;
   }
 
   .mainSection p {
@@ -241,43 +251,40 @@ footer {
 
   .timer {
     width: 100%;
-    color: white;
-    background-color: rgb(0 0 0 / 0.5)
+    color: #3d251e;
+    background-color: rgb(255 255 255 / 0.5);
   }
 
   .time {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
     border-radius: none;
     gap: 15px;
-    color: white;
+    color: #3d251e;
   }
-
-
 
   .surveySection {
     width: auto;
     color: white;
-   
   }
 
   .inputs input {
-    color: white;
-    border-bottom: 2px solid white;
+    color: #3d251e;
+    border-bottom: 2px solid black;
   }
 
   button {
     background-color: white;
-    color: #000;
+    color: #3d251e;
   }
 
   form {
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
     width: 400px;
     /* background: none; */
   }
-  input{
+  input {
     background: none;
   }
 
@@ -289,14 +296,14 @@ footer {
   footer h2 {
     color: white;
   }
-  .text{
+  .text {
     /* height: 400px; */
     /* width: 500px; */
     font-size: 1.5rem;
-    color: #fff;
-    background-color: rgb(0 0 0 / 0.5)
+    color: #3d251e;
+    background-color: rgba(255, 255, 255, 0.5);
   }
-  .width{
+  .width {
     padding: 0 20px;
     width: 400px;
   }
@@ -306,8 +313,8 @@ footer {
   color: #000;
 }
 .heart {
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   background-color: rgb(255, 0, 0);
   transform: rotate(-45deg);
   position: relative;
@@ -324,36 +331,35 @@ footer {
   transform: rotate(45deg);
 }
 
-.heart::before, 
+.heart::before,
 .heart::after {
   z-index: -1;
-    content: "";
-    height: 30px;
-    width: 30px;
-    background-color: rgb(255, 11, 11);
-    border-radius: 50%;
-    position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: rgb(255, 11, 11);
+  border-radius: 50%;
+  position: absolute;
 }
 
 .heart::before {
-  top: -15px;
+  top: -10px;
   left: 0px;
 }
 
 .heart::after {
-  left: 15px;
+  left: 10px;
   top: 0px;
 }
 
 @keyframes heartbeat {
   0% {
-      transform: scale(1) rotate(-45deg);
+    transform: scale(1) rotate(-45deg);
   }
 
   25% {
-      transform: scale(1.25) rotate(-45deg);
+    transform: scale(1.25) rotate(-45deg);
   }
-
 }
 
 .reveal-text {
@@ -367,12 +373,12 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
-@media (max-height:800px),(max-width:400px) {
+@media (max-height: 800px), (max-width: 400px) {
   .wrapper {
     height: 90vh;
     /* margin: 0 90px 0 -20px; */
   }
   /* .wrapper h1{ */
-    /* margin: 0 40px 0 -20px; */
+  /* margin: 0 40px 0 -20px; */
   /* } */
 }

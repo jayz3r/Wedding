@@ -52,11 +52,9 @@ const Text = ({ text, minitext, names }) => {
         <h2 className="text-3xl font-bold mb-4 width">{text}</h2>
       </RevealText>
       <div>
+        
         <RevealText>
-          <h4 className="text-base mb-2">{minitext}</h4>
-        </RevealText>
-        <RevealText>
-          <h2 className="text-yellow-600 text-lg font-semibold">{names}</h2>
+          <h2 className=" text-3xl font-semibold font">{names}</h2>
         </RevealText>
       </div>
     </div>

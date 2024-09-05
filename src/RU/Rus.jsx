@@ -3,7 +3,6 @@ import Calendar from "../components/Calendar";
 import Form from "../components/Form";
 import Text from "../components/Text";
 
-
 const Rus = () => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
@@ -44,19 +43,36 @@ const Rus = () => {
           <h1 className="text-[5.5rem]">Санжар & Айсенем</h1>
         </header>
         <div className="mainSection rusk">
-          <h2>Пригласительное на свадьбу</h2>
-          <p>Ресторан "АТА"</p>
-          <p>Дата: 29.09.2024</p>
+          <h2>Опрос</h2>
         </div>
       </div>
-      <Calendar/>
       <Text
-      text={'Уважаемые гости, мы будем рады вас видеть на нашем торжественном мероприятии в честь рождения новой семьи Санжара и Айсенем.'}
-      minitext={'С уважением '}
-      names={'Калыйбек и Рахат'}
+        text={
+          "Уважаемые гости, мы будем рады вас видеть на нашем торжественном мероприятии в честь рождения новой семьи"
+        }
+        names={"Санжара и Айсенем"}
       />
+      <div className="flex flex-col text-center text-3xl items-center">
+        <p>
+          Ресторан <br /> <span className="text-4xl">"ATA BANQUET HALL"</span>{" "}
+        </p>
+        <p>Дата: 29.09.2024</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23411.27910861405!2d74.6051870743164!3d42.821954800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5000ae91b19%3A0xec99eb7d6b51aff5!2z0JDRgtCwINCx0LDQvdC60LXRgtC90YvQuSDQt9Cw0Ls!5e0!3m2!1sru!2skg!4v1721111315004!5m2!1sru!2skg"
+          width="600"
+          height="350"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="map"
+        ></iframe>
+      </div>
+      <Calendar />
+
       <div className="timer">
-        <h2>До свадьбы осталось:</h2>
+        <h2 className="text-3xl">Начало свадьбы:</h2>
+        <h2 className="text-5xl">17:00</h2>
         <div className="time">
           <div className="days">
             <h3 id="days">{timeLeft.days}</h3>
@@ -80,17 +96,7 @@ const Rus = () => {
         </div>
       </div>
       <div className="surveySection">
-        <Form name={"ФИО"} yes={'Приду'} no={'Не приду'}/>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23411.27910861405!2d74.6051870743164!3d42.821954800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb5000ae91b19%3A0xec99eb7d6b51aff5!2z0JDRgtCwINCx0LDQvdC60LXRgtC90YvQuSDQt9Cw0Ls!5e0!3m2!1sru!2skg!4v1721111315004!5m2!1sru!2skg"
-          width="600"
-          height="350"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="map"
-        ></iframe>
+        <Form name={"ФИО"} yes={"Приду"} no={"Не приду"} />
       </div>
       <footer>
         <h2>По всем вопросам обращаться по номеру: +996 557 216 721</h2>

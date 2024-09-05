@@ -3,10 +3,10 @@ import React from "react";
 const Calendar = () => {
   return (
     <div className="flex items-center  justify-center py-8 px-4">
-      <div className="max-w-lg w-full bg-black/50 shadow-lg">
+      <div className="max-w-lg w-full bg-white/50 shadow-lg">
         <div className="md:p-8 p-5   rounded-t">
           <div className="px-4 flex items-center justify-between">
-            <span tabIndex="0" className="focus:outline-none text-base font-bold text-white ">
+            <span tabIndex="0" className="focus:outline-none text-base font-bold text-[#3d251e] ">
               Сентябрь 2024
             </span>
             <div className="flex items-center text-white">
@@ -20,7 +20,7 @@ const Calendar = () => {
                   {["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"].map((day) => (
                     <th key={day}>
                       <div className="w-full flex justify-center">
-                        <p className="text-base font-medium text-center text-gray-800 dark:text-gray-100">
+                        <p className="text-base font-medium text-center text-[#3d251e]">
                           {day}
                         </p>
                       </div>
@@ -44,8 +44,8 @@ const Calendar = () => {
                           {day ? (
                             <div className={`relative ${day === "29" ? "heart" : ""}`}>
                               <p
-                                className={`text-base text-gray-500 dark:text-gray-100 ${
-                                  day === "29" ? "number-rotated cursor-pointer" : ""
+                                className={`text-base text-gray-500  ${
+                                  day === "29" ? "number-rotated cursor-pointer text-white" : ""
                                 }`}
                               >
                                 {day}
